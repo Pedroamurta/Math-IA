@@ -1,5 +1,4 @@
-
-number_of_occurs = [
+number_of_occurences = [
     {},
     {},
     {},
@@ -15,9 +14,10 @@ with open("words.txt", "r") as words_text:
 for w in words:
     for i in range(0, 5):
         try:
-            number_of_occurs[i][w[i].lower()] += 1
+            number_of_occurences[i][w[i].lower()] += 1
         except:
-            number_of_occurs[i][w[i].lower()] = 1
+            number_of_occurences[i][w[i].lower()] = 1
 
-for i in number_of_occurs:
+print("\n\n")
+for i in number_of_occurences:
     print(i, end= "\n\n\n\n")
