@@ -1,4 +1,4 @@
-with open('words.txt', 'r') as text_file:
+with open('valid_guesses.txt', 'r') as text_file:
     words = []
     # this is to make sure two words on the same line don't get saved as one
     for line in text_file:
@@ -14,7 +14,7 @@ with open('words.txt', 'r') as text_file:
 
 words.sort()
 
-with open('words.txt', 'w') as text_file:
+with open('valid_guesses.txt', 'w') as text_file:
     for word in words:
         text_file.writelines(f'{word}\n')
 
