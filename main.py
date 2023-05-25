@@ -19,5 +19,5 @@ for w in words:
             number_of_occurences[i][w[i].lower()] = 1
 
 print("\n\n")
-for i in number_of_occurences:
-    print(i, end= "\n\n\n\n")
+for dict in number_of_occurences:
+    print(dict, end= "\n\n\n\n")
