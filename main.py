@@ -8,7 +8,7 @@ number_of_occurences = [
 
 words = []
 
-with open("valid_guesses.txt", "r") as words_text:
+with open("valid_solutions.txt", "r") as words_text:
     words = words_text.read().split("\n")
 
 for w in words:
