@@ -19,5 +19,4 @@ def generate_wordle_patterns():
 
 # Generate and print valid Wordle patterns
 valid_patterns = generate_wordle_patterns()
-print(f"Number of valid patterns: {len(valid_patterns)}")
-print(valid_patterns)
+
