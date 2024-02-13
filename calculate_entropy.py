@@ -8,5 +8,7 @@ for word in word_feedback_probability:
     entropy = -fsum(p * log2(p) for p in probability_list)
     word_entropy[word] = entropy
 
-best_word = min(word_entropy, key = word_entropy.get)
-print(best_word, word_entropy[best_word])
+best_words = sorted(word_entropy, key = word_entropy.get)[:5]
+print(best_words)
+for word in best_words:
+    print(word, word_entropy[word])
