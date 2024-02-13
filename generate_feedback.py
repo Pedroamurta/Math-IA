@@ -38,19 +38,7 @@ with open('valid_solutions.txt', 'r') as text_file:
                 pass
 
 word_feedbacks = {}
-feedback_count ={}
 
 for word in words:
     feedbacks = get_feedbacks(word, solutions)
     word_feedbacks[word] = feedbacks
-    for feedback in feedbacks:
-        if feedback in feedback_count:
-            feedback_count[feedback] += 1
-        else:
-            feedback_count[feedback] = 1
-
-
-print(word_feedbacks)
-print("\n\n\n")
-print(feedback_count)
-    
