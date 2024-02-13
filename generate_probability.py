@@ -1,6 +1,4 @@
 from generate_feedback import word_feedbacks
-
-
     
 word_feedback_probability = {}
 for word in word_feedbacks:
